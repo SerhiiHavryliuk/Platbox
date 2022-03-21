@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Docs</title>
+	<base href="">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="img/favicon.png" rel="shortcut icon">
+	<meta content="" name="description">
+	<meta content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="white" name="apple-mobile-web-app-status-bar-style">
+	<meta content="" name="apple-mobile-web-app-title">
+</head>
+<body>
+	<div class="layuot-global header__layout_docs">
+		<div class="layout-main header__lyatout">
+			<div class="header__wrap">
+				<header class="header">
+					<a class="header__logo" href="index.html" title="на главную"><img alt="PlatBox" src="img/header/logo-light.svg"></a>
+					<nav class="h-menu-dd">
+						<input class="h-menu-dd__mob-btn-check" id="h-menu-dd__show-menu" type="checkbox"><label class="h-menu-dd__mob-btn" for="h-menu-dd__show-menu"></label>
+						<ul class="h-menu-dd__list h-menu-dd__list_left">
+							<li class="h-menu-dd__item h-menu__item-link h-menu-dd__item-index">
+								<a class="h-menu-dd__link" href="index.html">Main page</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="product.html">Products</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="tariff.html">Tariffs</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="#">For developers</a>
+							</li>
+							<li class="h-menu-dd__item-button-close-menu"></li>
+						</ul>
+						<ul class="h-menu-dd__list h-menu-dd__list_right">
+							<li class="h-menu-dd__item-button">
+								<a class="button button-first" href="try.html">Connect</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="login.html">Log in</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+		<div class="pb-docs">
+			<div class="slide"></div>
+			<div class="layout-main">
+				<div class="pt-docs__group">
+					<section class="pb-docs__menu">
+						<ul>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Payment UI</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Storefront API</a>
+							</li>
+							<li>
+								<ul class="pb-docs__submenu">
+									<li>
+										<a class="pb-docs__menu-link" href="#">Introduction</a>
+									</li>
+									<li>
+										<a class="pb-docs__menu-link" href="#">Endpoint paths</a>
+									</li>
+									<li>
+										<a class="pb-docs__menu-link pb-docs__menu-link-active" href="#">Request and response</a>
+									</li>
+									<li>
+										<a class="pb-docs__menu-link" href="#">Authentication</a>
+									</li>
+									<li>
+										<a class="pb-docs__menu-link" href="#">Endpoint types</a>
+									</li>
+									<li>
+										<a class="pb-docs__menu-link" href="#">Date format</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Tokenization</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Subscriptions</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">User attributes</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Virtual items</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Virtual Currency</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Wallet</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Pay2Play Game delivery</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Coupons</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Promotions</a>
+							</li>
+							<li>
+								<a class="pb-docs__menu-link" href="#">Products (BETA)</a>
+							</li>
+						</ul>
+					</section>
+					<section class="pt-docs__content">
+						<h2 class="title_secondary">Set the payment systems</h2>
+						<p class="pt-docs__content-subtitle">Set the payment systems of the promotion. If the payment systems list is empty, the promotion will be applied for all payment systems. If the promotion is read-only (read_only = true), you are not allowed to call this command.</p>
+						<div class="pt-docs__code">
+							<h2 class="pt-docs__code-title">HTTP REQUEST</h2>
+							<p class="pt-docs__code-content">PUT https://api.xsolla.com/merchant/merchants/{mer- chant_id}/promotions/{promotion_id}/payment_systems</p>
+						</div>
+						<div class="pt-docs__value">
+							<div class="pt-docs__value_name">
+								merchant_id
+							</div>
+							<div class="pt-docs__value_type">
+								int
+							</div>
+							<div class="pt-docs__value_descr">
+								ID merchant.
+							</div>
+						</div>
+						<div class="pt-docs__type">
+							<div class="pt-docs__type-name">
+								Type<span class="pt-docs__patch">PATCH</span>
+							</div>
+							<div class="pt-docs__type_descr">
+								Modifies only specified fields of the existing entity that matches the identifier you provide.
+							</div>
+						</div>
+						<div class="pt-docs__value">
+							<div class="pt-docs__value_name">
+								user.country.value
+							</div>
+							<div class="pt-docs__value_type">
+								string
+							</div>
+							<div class="pt-docs__value_descr">
+								User country. 2-letter definition (in uppercase) of the country is used according to <span class="pt-docs__iso">ISO 3166-1 alpha-2</span> standard.
+							</div>
+						</div>
+						<div class="pt-docs__shipping">
+							<div class="pt-docs__shipping-title">
+								Shipping Address (BETA)
+							</div>
+							<pre class="pt-docs__descr">API is in closed Beta.
+To request access please email integration@xsolla.com</pre>
+						</div>
+					</section>
+					<section class="pt-docs__tabs">
+						<ul class="pt-docs__tabs-menu">
+							<li class="pt-docs__tab" data-tabs-name="CURL">CURL</li>
+							<li class="pt-docs__tab pt-docs__tabs-active" data-tabs-name="HTTP">HTTP</li>
+							<li class="pt-docs__tab" data-tabs-name="PHP">PHP</li>
+							<li class="pt-docs__tab" data-tabs-name="JS">JS</li>
+						</ul>
+						<div class="pt-docs__tabs-block-group">
+							<div class="pt-docs__tabs-block" data-tabs-name="CURL">
+								<div class="pt-docs__tabs_content-title">
+									Response 11111111
+								</div>
+								<pre class="pt-docs__tabs_content">HTTP/1.1 <span class="pt-docs__text-blue">200</span> OK
+<span class="pt-docs__text-blue">Content-Type</span>: application/json
+{
+   "groups": [
+       {
+           "<span class="pt-docs__text-blue">id</span>": 1,
+           "external_id": "<span class="pt-docs__text-green">21</span>",
+           "<span class="pt-docs__text-blue">name</span>": "<span class="pt-docs__text-green">Group name 21</span>",
+           "<span class="pt-docs__text-blue">description</span>": "<span class="pt-docs__text-green">Group description 21</span>",
+           "<span class="pt-docs__text-blue">children</span>": [],
+           "<span class="pt-docs__text-blue">level</span>": 0</pre>
+							</div>
+							<div class="pt-docs__tabs-block pt-docs__tabs-block_active" data-tabs-name="HTTP">
+								<div class="pt-docs__tabs_content-title">
+									Response
+								</div>
+								<pre class="pt-docs__tabs_content">HTTP/1.1 <span class="pt-docs__text-blue">200</span> OK
+<span class="pt-docs__text-blue">Content-Type</span>: application/json
+{
+   "groups": [
+       {
+           "<span class="pt-docs__text-blue">id</span>": 1,
+           "external_id": "<span class="pt-docs__text-green">21</span>",
+           "<span class="pt-docs__text-blue">name</span>": "<span class="pt-docs__text-green">Group name 21</span>",
+           "<span class="pt-docs__text-blue">description</span>": "<span class="pt-docs__text-green">Group description 21</span>",
+           "<span class="pt-docs__text-blue">children</span>": [],
+           "<span class="pt-docs__text-blue">level</span>": 0</pre>
+							</div>
+							<div class="pt-docs__tabs-block" data-tabs-name="PHP">
+								<div class="pt-docs__tabs_content-title">
+									Response 333333
+								</div>
+								<pre class="pt-docs__tabs_content">HTTP/1.1 <span class="pt-docs__text-blue">200</span> OK
+<span class="pt-docs__text-blue">Content-Type</span>: application/json
+{
+   "groups": [
+       {
+           "<span class="pt-docs__text-blue">id</span>": 1,
+           "external_id": "<span class="pt-docs__text-green">21</span>",
+           "<span class="pt-docs__text-blue">name</span>": "<span class="pt-docs__text-green">Group name 21</span>",
+           "<span class="pt-docs__text-blue">description</span>": "<span class="pt-docs__text-green">Group description 21</span>",
+           "<span class="pt-docs__text-blue">children</span>": [],
+           "<span class="pt-docs__text-blue">level</span>": 0</pre>
+							</div>
+							<div class="pt-docs__tabs-block" data-tabs-name="JS">
+								<div class="pt-docs__tabs_content-title">
+									Response 4444444
+								</div>
+								<pre class="pt-docs__tabs_content">HTTP/1.1 <span class="pt-docs__text-blue">200</span> OK
+<span class="pt-docs__text-blue">Content-Type</span>: application/json
+{
+   "groups": [
+       {
+           "<span class="pt-docs__text-blue">id</span>": 1,
+           "external_id": "<span class="pt-docs__text-green">21</span>",
+           "<span class="pt-docs__text-blue">name</span>": "<span class="pt-docs__text-green">Group name 21</span>",
+           "<span class="pt-docs__text-blue">description</span>": "<span class="pt-docs__text-green">Group description 21</span>",
+           "<span class="pt-docs__text-blue">children</span>": [],
+           "<span class="pt-docs__text-blue">level</span>": 0</pre>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/lib/lib.min.js">
+	</script>
+	<script src="js/main.min.js">
+	</script>
+	<script src="js/models/pages/app_docs-ui.js">
+	</script>
+</body>
+</html>

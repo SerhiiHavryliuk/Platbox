@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<base href="">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="img/favicon.png" rel="shortcut icon">
+	<meta content="" name="description">
+	<meta content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="white" name="apple-mobile-web-app-status-bar-style">
+	<meta content="" name="apple-mobile-web-app-title">
+</head>
+<body>
+	<div class="layuot-global-login">
+		<div class="layout-main header__lyatout">
+			<div class="header__wrap">
+				<header class="header">
+					<a class="header__logo" href="index.html" title="на главную"></a><a class="header__back" href="index.html">Back</a>
+					<nav class="h-menu-dd pb-login__h-menu-dd">
+						<input class="h-menu-dd__mob-btn-check" id="h-menu-dd__show-menu" type="checkbox"><label class="h-menu-dd__mob-btn" for="h-menu-dd__show-menu"></label>
+						<ul class="h-menu-dd__list h-menu-dd__list_left">
+							<li class="h-menu-dd__item h-menu__item-link h-menu-dd__item-index">
+								<a class="h-menu-dd__link" href="/index.html">Main page</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="product.html">Products</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="tariff.html">Tariffs</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="#">For developers</a>
+							</li>
+							<li class="h-menu-dd__item-button-close-menu"></li>
+						</ul>
+						<ul class="h-menu-dd__list h-menu-dd__list_right">
+							<li class="h-menu-dd__item-button">
+								<a class="button button-first" href="try.html">Connect</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="login.html">Log in</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+		<div class="pb-login">
+			<div class="pb-login__slide">
+				<div class="pb-login__slide-group">
+					<div class="pb-login__block pb-login__authorization">
+						<div class="pb-login__block-group">
+							<div class="pb-login__logo"><img alt="" src="img/login/logo-login.svg"></div>
+							<form action="php/ajax-form-ok.json" class="pb-login__form" data-type="json" id="form-authorization" method="get" name="form-authorization">
+								<div class="pb-login__form-group">
+									<div class="pb-login__field pb-login__row-login">
+										<input class="input" id="input10" name="login-form[login]" placeholder="User name" required="" type="text" value="">
+									</div>
+									<div class="pb-login__field pb-login__row-login-password">
+										<input class="input" id="input20" name="login-form[password]" placeholder="Password" required="" type="password" value="">
+									</div>
+									<div class="pb-login__row-container">
+										<div class="pb-login__row-checkbox">
+											<input checked="checked" class="css-checkbox" id="checkboxG2" name="checkboxG2" type="checkbox"><label class="css-label radGroup1" for="checkboxG2"></label><span>Remember me</span>
+										</div>
+										<div class="pb-login__button-forgot-password">
+											Forgot password
+										</div>
+									</div>
+									<div class="pb-login__error"></div>
+									<div class="pb-login__row-submit">
+										<input class="button pb-login__button-enter" type="submit" value="Sign in">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="pb-login__row-links">
+							<div class="pb-login__first-button">
+								Don't have an account?
+							</div>
+							<div class="pb-login__second-button pb-login__button-registration">
+								Sign up
+							</div>
+						</div>
+					</div>
+					<div class="pb-login__block pb-login__registration">
+						<div class="pb-login__block-group">
+							<div class="pb-login__logo"><img alt="" src="img/login/logo-login.svg"></div>
+							<form action="php/ajax-form-ok.json" class="pb-login__form" data-type="json" id="form-registration" method="get" name="form-registration">
+								<div class="pb-login__form-group">
+									<div class="pb-login__field pb-login__row-login">
+										<input class="input" id="input1" name="login-form[login]" placeholder="User name" required="" type="text" value="">
+									</div>
+									<div class="pb-login__field">
+										<input class="input" id="input2" name="login-form[email]" placeholder="Email" required="" type="email" value="">
+									</div>
+									<div class="pb-login__field pb-login__row-login-password">
+										<input class="input" id="input3" name="login-form[password]" placeholder="Password" required="" type="password" value="">
+									</div>
+									<div class="pb-login__row-recaptcha">
+										<div class="g-recaptcha" data-sitekey="6LfidSIUAAAAACpS-8kdxdLkZZRdIHOt0yAehuwN"></div>
+									</div>
+									<div class="pb-login__error"></div>
+									<div class="pb-login__row-submit">
+										<input class="button pb-login__button-enter" type="submit" value="Greate account">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="pb-login__row-links">
+							<div class="pb-login__first-button">
+								Already have an account?
+							</div>
+							<div class="pb-login__second-button pb-login__button-sign-in">
+								Sing in
+							</div>
+						</div>
+					</div>
+					<div class="pb-login__block pb-login__forgot-password">
+						<div class="pb-login__block-group">
+							<div class="pb-login__logo"><img alt="" src="img/login/logo-login.svg"></div>
+							<div class="pb-login__text-forgot">
+								Enter your email address below and we'll send you a link to reset your password.
+							</div>
+							<form action="php/ajax-form-error.json" class="pb-login__form" data-type="json" id="form-forgot-password" method="get" name="form-forgot-password">
+								<div class="pb-login__form-group">
+									<div class="pb-login__field">
+										<input class="input" id="input6" name="login-form[email]" placeholder="Your E-mail" required="" type="email" value="">
+									</div>
+									<div class="pb-login__error"></div>
+									<div class="pb-login__row-submit">
+										<input class="button pb-login__button-enter" type="submit" value="Reset password">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/lib/lib.min.js">
+	</script>
+	<script src="js/main.min.js">
+	</script>
+	<script src='https://www.google.com/recaptcha/api.js'>
+	</script>
+	<script src="js/models/pages/app_login-ui.js">
+	</script>
+</body>
+</html>

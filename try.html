@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>try</title>
+	<base href="">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="img/favicon.png" rel="shortcut icon">
+	<meta content="" name="description">
+	<meta content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="white" name="apple-mobile-web-app-status-bar-style">
+	<meta content="" name="apple-mobile-web-app-title">
+</head>
+<body>
+	<div class="layuot-global">
+		<div class="layout-main header__lyatout">
+			<div class="header__wrap">
+				<header class="header">
+					<a class="header__logo" href="index.html" title="на главную"><img alt="PlatBox" src="img/header/logo-light.svg"></a>
+					<nav class="h-menu-dd">
+						<input class="h-menu-dd__mob-btn-check" id="h-menu-dd__show-menu" type="checkbox"><label class="h-menu-dd__mob-btn" for="h-menu-dd__show-menu"></label>
+						<ul class="h-menu-dd__list h-menu-dd__list_left">
+							<li class="h-menu-dd__item h-menu__item-link h-menu-dd__item-index">
+								<a class="h-menu-dd__link" href="index.html">Main page</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="product.html">Products</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="tariff.html">Tariffs</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="#">For developers</a>
+							</li>
+							<li class="h-menu-dd__item-button-close-menu"></li>
+						</ul>
+						<ul class="h-menu-dd__list h-menu-dd__list_right">
+							<li class="h-menu-dd__item-button">
+								<a class="button button-first" href="try.html">Connect</a>
+							</li>
+							<li class="h-menu-dd__item h-menu__item-link">
+								<a class="h-menu-dd__link" href="login.html">Log in</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+		<div class="pb-try">
+			<div class="slide"></div>
+			<section class="pb-try__nav">
+				<div class="layout-main">
+					<div class="pb-try__nav-row">
+						<a class="pb-try__nav-link" href="#">Payment Methods</a> <a class="pb-try__nav-link" href="#">Documents</a> <a class="pb-try__nav-link pb-try__nav-link-active" href="#">Application for connection</a>
+					</div>
+				</div>
+			</section>
+			<section class="pb-try__main-title">
+				<div class="layout-main">
+					<h1 class="title">Application for connections</h1>
+					<h2 class="title_secondary">No hidden commisions. Payment only for successful transactions.</h2>
+				</div>
+			</section>
+			<section class="pb-try__form">
+				<div class="layout-main">
+					<div class="pb-try__form-wrap">
+						<form action="php/ajax-form-ok.json" class="pb-login__form" data-type="json" id="form-try" method="get" name="form-try">
+							<div class="pb-login__form-group">
+								<div class="pb-login__field pb-login__row-login">
+									<input class="input" id="input1" name="login-form[site]" placeholder="Site" required="" type="text" value="">
+								</div>
+								<div class="pb-login__field pb-login__row-login">
+									<input class="input" id="input2" name="login-form[name]" placeholder="Name" required="" type="text" value="">
+								</div>
+								<div class="pb-login__field">
+									<input class="input" id="input3" name="login-form[phone]" placeholder="Phone" required="" type="tel" value="">
+								</div>
+								<div class="pb-login__field">
+									<input class="input" id="input4" name="login-form[email]" placeholder="Email" required="" type="email" value="">
+								</div>
+								<div class="pb-login__error"></div>
+								<div class="pb-login__row-submit">
+									<input class="button pb-login__button-enter" type="submit" value="Send">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="pb-try__answer-wrap">
+						<div class="pb-try__answer">
+							<p>Thank you</p>
+							<p>Your request has been sent.</p>
+							<p>In the near time, our manager will contact you.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="layout-main">
+			<div class="footer__row-top"><img alt="" src="img/header/logo.svg"></div>
+			<div class="footer__row-middle">
+				<div class="footer__column">
+					<a class="footer__tel" href="tel:88007757375">8 800 775 73 75</a> <a class="footer__tel" href="tel:74957757375">7 495 775 73 75</a>
+					<div class="footer__address">
+						<p class="text">129164, Moscow Rocket bilvar,</p>
+						<p class="text">16 house, 16 floor,</p>
+						<p class="text">1606 office <a class="footer__link" href="#">(map)</a></p>
+					</div>
+				</div>
+				<div class="footer__column">
+					<ul>
+						<li>
+							<p class="footer__suppor-ttitle">Support</p>
+						</li>
+						<li>
+							<a class="footer__support-tel" href="tel:88007757375">8 800 775 73 75</a>
+						</li>
+						<li>
+							<a class="footer__support-email" href="mailto:support@platbox.com">support@platbox.com</a>
+						</li>
+						<li>
+							<div class="menu__drop-down-menu-button">
+								For business
+								<div class="menu__drop-down-menu">
+									<ul>
+										<li>наименование 1</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__links">
+						<li>
+							<a class="footer__link" href="#">The solution</a>
+						</li>
+						<li>
+							<a class="footer__link" href="https://www.facebook.com/">Demo</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Developers</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Our partners</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Documentation</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__social-icons">
+						<li class="footer__social">
+							<a class="fa fa-facebook" href="#"></a>
+						</li>
+						<li class="footer__social">
+							<a class="fa fa-twitter" href="#"></a>
+						</li>
+						<li class="footer__social">
+							<a class="fa fa-vk" href="#"></a>
+						</li>
+						<li class="footer__social">
+							<a class="fa fa-linkedin" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__row-bottom">
+				<p class="footer__platbox-copyright">PlatBox @ Online Payments Systems</p>
+				<p class="text"><a class="footer__link-policy" href="#">Privacy policy</a></p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/lib/lib.min.js">
+	</script>
+	<script src="js/main.min.js">
+	</script>
+	<script src="js/models/pages/app_try-ui.js">
+	</script>
+</body>
+</html>
